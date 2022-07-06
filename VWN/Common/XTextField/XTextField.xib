@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,23 +20,20 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mg6-BE-3A1">
-                    <rect key="frame" x="0.0" y="0.0" width="282" height="70"/>
+                    <rect key="frame" x="0.0" y="0.0" width="282" height="82.5"/>
                     <subviews>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-aU-sbp">
-                            <rect key="frame" x="8" y="8" width="266" height="60"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="60" id="YkF-Zj-fWH"/>
-                            </constraints>
+                            <rect key="frame" x="8" y="5" width="266" height="72.5"/>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="zfE-aU-sbp" firstAttribute="top" secondItem="mg6-BE-3A1" secondAttribute="top" constant="8" id="GuX-UN-ovN"/>
-                        <constraint firstAttribute="height" constant="70" id="I2T-4C-cSn"/>
-                        <constraint firstItem="zfE-aU-sbp" firstAttribute="leading" secondItem="mg6-BE-3A1" secondAttribute="leading" constant="8" id="QPT-Lg-RM3"/>
-                        <constraint firstAttribute="trailing" secondItem="zfE-aU-sbp" secondAttribute="trailing" constant="8" id="SEa-aC-AT9"/>
+                        <constraint firstAttribute="bottom" secondItem="zfE-aU-sbp" secondAttribute="bottom" constant="5" id="3Cl-Ap-Scw"/>
+                        <constraint firstAttribute="trailing" secondItem="zfE-aU-sbp" secondAttribute="trailing" constant="8" id="3co-vQ-NnT"/>
+                        <constraint firstItem="zfE-aU-sbp" firstAttribute="leading" secondItem="mg6-BE-3A1" secondAttribute="leading" constant="8" id="LrI-A3-J9t"/>
+                        <constraint firstItem="zfE-aU-sbp" firstAttribute="top" secondItem="mg6-BE-3A1" secondAttribute="top" constant="5" id="eTz-E8-Y8K"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -45,7 +42,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="an error occured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko7-dR-fMs">
-                    <rect key="frame" x="8" y="78" width="274" height="20"/>
+                    <rect key="frame" x="8" y="90.5" width="282" height="19.5"/>
                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                     <color key="textColor" systemColor="systemPinkColor"/>
                     <nil key="highlightedColor"/>
@@ -54,12 +51,14 @@
             <viewLayoutGuide key="safeArea" id="EB8-nu-hAi"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="mg6-BE-3A1" firstAttribute="leading" secondItem="EB8-nu-hAi" secondAttribute="leading" id="2IF-Q1-7x8"/>
-                <constraint firstItem="ko7-dR-fMs" firstAttribute="trailing" secondItem="mg6-BE-3A1" secondAttribute="trailing" id="7JP-Xl-gQy"/>
-                <constraint firstItem="ko7-dR-fMs" firstAttribute="top" secondItem="mg6-BE-3A1" secondAttribute="bottom" constant="8" id="HYQ-os-aNI"/>
-                <constraint firstItem="ko7-dR-fMs" firstAttribute="leading" secondItem="mg6-BE-3A1" secondAttribute="leading" constant="8" id="PI7-hD-cfV"/>
-                <constraint firstItem="EB8-nu-hAi" firstAttribute="trailing" secondItem="mg6-BE-3A1" secondAttribute="trailing" id="S4D-fM-S18"/>
-                <constraint firstItem="mg6-BE-3A1" firstAttribute="top" secondItem="byL-9k-Rsr" secondAttribute="top" id="rlE-ee-ST9"/>
+                <constraint firstItem="mg6-BE-3A1" firstAttribute="height" secondItem="byL-9k-Rsr" secondAttribute="height" multiplier="0.7" id="5Uu-9M-1LT"/>
+                <constraint firstItem="EB8-nu-hAi" firstAttribute="bottom" secondItem="ko7-dR-fMs" secondAttribute="bottom" constant="8" id="Aai-wy-maH"/>
+                <constraint firstItem="mg6-BE-3A1" firstAttribute="leading" secondItem="EB8-nu-hAi" secondAttribute="leading" id="CCl-av-MZC"/>
+                <constraint firstItem="ko7-dR-fMs" firstAttribute="top" secondItem="mg6-BE-3A1" secondAttribute="bottom" constant="8" id="HbA-q8-rti"/>
+                <constraint firstItem="ko7-dR-fMs" firstAttribute="leading" secondItem="EB8-nu-hAi" secondAttribute="leading" constant="8" id="Ybe-Re-cbu"/>
+                <constraint firstItem="ko7-dR-fMs" firstAttribute="trailing" secondItem="EB8-nu-hAi" secondAttribute="trailing" constant="8" id="Z6b-fN-MXG"/>
+                <constraint firstItem="mg6-BE-3A1" firstAttribute="trailing" secondItem="EB8-nu-hAi" secondAttribute="trailing" id="bPC-hI-AJF"/>
+                <constraint firstItem="mg6-BE-3A1" firstAttribute="top" secondItem="byL-9k-Rsr" secondAttribute="top" id="yhX-oH-s8b"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="-571.01449275362324" y="152.00892857142856"/>

@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "R.swift.Library",
+        "repositoryURL": "https://github.com/mac-cain13/R.swift.Library",
+        "state": {
+          "branch": "master",
+          "revision": "3a64127e8113cc33179504dfadc91b361d55a0b1",
+          "version": null
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift",
+        "state": {
+          "branch": "main",
+          "revision": "e0ab8c4e18baf6679a65b325155923276b832687",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

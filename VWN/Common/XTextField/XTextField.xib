@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XTextField" customModule="VWN" customModuleProvider="target">
+            <connections>
+                <outlet property="text" destination="zfE-aU-sbp" id="zCq-Ff-EBK"/>
+                <outlet property="uiContentView" destination="byL-9k-Rsr" id="kX8-Lx-EZY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="byL-9k-Rsr">
+            <rect key="frame" x="0.0" y="0.0" width="282" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mg6-BE-3A1">
+                    <rect key="frame" x="0.0" y="0.0" width="282" height="70"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zfE-aU-sbp">
+                            <rect key="frame" x="8" y="8" width="266" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="YkF-Zj-fWH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="zfE-aU-sbp" firstAttribute="top" secondItem="mg6-BE-3A1" secondAttribute="top" constant="8" id="GuX-UN-ovN"/>
+                        <constraint firstAttribute="height" constant="70" id="I2T-4C-cSn"/>
+                        <constraint firstItem="zfE-aU-sbp" firstAttribute="leading" secondItem="mg6-BE-3A1" secondAttribute="leading" constant="8" id="QPT-Lg-RM3"/>
+                        <constraint firstAttribute="trailing" secondItem="zfE-aU-sbp" secondAttribute="trailing" constant="8" id="SEa-aC-AT9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="an error occured" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko7-dR-fMs">
+                    <rect key="frame" x="8" y="78" width="274" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" systemColor="systemPinkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="EB8-nu-hAi"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mg6-BE-3A1" firstAttribute="leading" secondItem="EB8-nu-hAi" secondAttribute="leading" id="2IF-Q1-7x8"/>
+                <constraint firstItem="ko7-dR-fMs" firstAttribute="trailing" secondItem="mg6-BE-3A1" secondAttribute="trailing" id="7JP-Xl-gQy"/>
+                <constraint firstItem="ko7-dR-fMs" firstAttribute="top" secondItem="mg6-BE-3A1" secondAttribute="bottom" constant="8" id="HYQ-os-aNI"/>
+                <constraint firstItem="ko7-dR-fMs" firstAttribute="leading" secondItem="mg6-BE-3A1" secondAttribute="leading" constant="8" id="PI7-hD-cfV"/>
+                <constraint firstItem="EB8-nu-hAi" firstAttribute="trailing" secondItem="mg6-BE-3A1" secondAttribute="trailing" id="S4D-fM-S18"/>
+                <constraint firstItem="mg6-BE-3A1" firstAttribute="top" secondItem="byL-9k-Rsr" secondAttribute="top" id="rlE-ee-ST9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-571.01449275362324" y="152.00892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
